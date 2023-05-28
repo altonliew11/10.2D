@@ -10,7 +10,7 @@ steps:
 
 
 - name: 'gcr.io/cloud-builders/kubectl'
-  args: ['set', 'image', 'deployment/hellodeployment', 'hellonode=gcr.io/robust-flow-387911/hello-alton:$COMMIT_SHA']
+  args: ['set', 'image', 'deployment/hellodeployment', 'hellonode=gcr.io/robust-flow-387911/node-web-app:$COMMIT_SHA']
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=us-west1'
   - 'CLOUDSDK_CONTAINER_CLUSTER=hello-alton-cluster'
